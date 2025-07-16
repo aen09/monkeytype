@@ -1679,7 +1679,7 @@
       "id": 279,
       "length": 186,
       "source": "Rosetta Code",
-      "text": "import asynchttpserver, asyncdispatch\n\nproc cb(req: Request) {.async.} =\n\tawait req.respond(Http200, \"Hello, World!\")\n\nasyncCheck newAsyncHttpServer().serve(Port(8080), cb)\nrunForever()\n"
+      "text": "import asynchttpserver, asyncdispatch\n\nproc cb(req: Request) {.async.} =\n\tawait req.respond(Http200, \"Hello, World!\")\n\nasyncCheck newAsyncHttpServer().serve(Port(3002), cb)\nrunForever()\n"
     },
     {
       "id": 280,
